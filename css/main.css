@@ -1,0 +1,53 @@
+/**
+ * Inspired by Oddbird: https://www.youtube.com/shorts/Wolb4Jjn3os
+ */
+.img-compare {
+  display: grid;
+  height: 41.9687rem;
+  overflow: hidden;
+  place-items: center;
+  position: relative;
+  width: 62.9375rem;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .img-before,
+  .img-after {
+    height: 100%;
+    position: absolute;
+
+    img {
+      object-position: 100% 0;
+    }
+  }
+
+  .img-before {
+    /* stylelint-disable-next-line declaration-property-value-no-unknown */
+    inset-inline-start: anchor(--thumb center);
+    position-anchor: --thumb;
+  }
+
+  .img-compare-slider {
+    position: absolute;
+    width: calc(100% + 16px);
+    z-index: 999;
+  }
+
+  .img-compare-slider::-webkit-slider-thumb {
+    anchor-name: --thumb;
+  }
+}
+
+/* https://www.tpgi.com/the-anatomy-of-visually-hidden/ */
+.visually-hidden:not(:focus, :active) {
+  block-size: 1px;
+  clip-path: inset(50%);
+  inline-size: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}

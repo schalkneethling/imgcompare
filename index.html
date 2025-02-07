@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImageCompare</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+</head>
+
+<body>
+  <div class="img-compare">
+    <!-- added before the images see: https://www.oddbird.net/2025/01/29/anchor-position-validity/ -->
+    <label class="visually-hidden" for="slider">Slide to compare</label>
+    <input class="img-compare-slider" id="slider" type="range" min="0" max="100">
+
+    <div class="img-after">
+      <img src="/assets/img-after.webp" height="1343" width="2014"
+        alt="Color photo of a lakeside village with a church steeple, surrounded by mountains. Blurred tree branches and light reflections frame the foreground.">
+    </div>
+
+    <div class="img-before">
+      <img src="/assets/img-before.webp" height="1343" width="2014"
+        alt="Black and white photo of a lakeside village with a church steeple, surrounded by mountains. Blurred tree branches and light reflections frame the foreground.">
+    </div>
+  </div>
+</body>
+
+</html>

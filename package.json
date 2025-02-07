@@ -1,0 +1,24 @@
+{
+  "name": "imgcompare",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "prettier:lint": "prettier .",
+    "prettier:format": "prettier --write .",
+    "lint:css": "stylelint **/*.css"
+  },
+  "keywords": [
+    "css",
+    "anchor-positioning",
+    "image-comparison"
+  ],
+  "author": "",
+  "license": "MIT",
+  "description": "An image comparison component in HTML and CSS using anchor positioning.",
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "stylelint": "^16.14.1",
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-order": "^6.0.4"
+  }
+}
